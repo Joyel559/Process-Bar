@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  padding: 10px;
+}
+
+.container {
+  text-align: left;
+}
+
+h1 {
+  font-size: 18px;
+}

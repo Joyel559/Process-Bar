@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Year Progress</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" data-timeframe="yearly">Yearly</button>
+      <button class="tab" data-timeframe="monthly">Monthly</button>
+      <button class="tab" data-timeframe="weekly">Weekly</button>
+    </div>
+
+    <div class="progress-section">
+      <div class="percentage">0%</div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p class="caption" id="caption">Year Progress</p>
+    </div>
+
+    <div class="customization-section">
+      <label for="colorPicker">Bar Color:</label>
+      <input type="color" id="colorPicker" value="#8B5CF6">
+
+      <label for="labelInput">Custom Label:</label>
+      <input type="text" id="labelInput" placeholder="Year Progress">
+
+      <label>Shape:</label>
+      <div class="shape-toggle">
+        <button class="shape-btn active" data-shape="rounded">Rounded</button>
+        <button class="shape-btn" data-shape="circular">Circular</button>
+      </div>
+
+      <label>Theme:</label>
+      <div class="theme-toggle">
+        <span class="icon" data-theme="light">☀️</span>
+        <span class="icon" data-theme="dark">🌙</span>
+      </div>
+
+      <label><input type="checkbox" id="glassmorphism"> Glassmorphism</label>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
